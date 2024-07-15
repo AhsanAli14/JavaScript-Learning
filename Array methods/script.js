@@ -43,3 +43,9 @@ console.log(numbers);
 //replacing with splice method
 numbers.splice(4,1,104);
 console.log(numbers);
+
+let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+companies.splice(0,1);              //delete first element
+console.log(companies);
+companies.splice(1,1,"Ola");        //replace Uber with Ola
+companies.push("Amazon");           //add Amazon to the end
