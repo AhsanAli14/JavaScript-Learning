@@ -70,6 +70,7 @@ const vowerlWrodcount = (msg) =>{                       //with arrow function
 let inputmsg = prompt("Type a message:");
 vowelcount(inputmsg);
 
+
 //forEach loop in array practice
 let arr = ["Pakistan", "India", "Afganistan", "China", "Iran"];             //with simple function definition
 arr.forEach(function printval(val){
@@ -90,3 +91,35 @@ let arraycities = ["Pakistan", "India", "Afganistan", "China", "Iran"];     //al
 arraycities.forEach((valu, idx , arraycities)=>{
     console.log(valu.toUpperCase(), idx, arraycities);
 })
+
+//practice question of forEach loop
+let arraynumbers = [1,2,3,4,5,6];
+arraynumbers.forEach((square)=>{
+    console.log(square*square);
+})
+
+
+//map() method
+let arrayNumbers = [1,2,3,4,5,6];
+let newArray = arrayNumbers.map((square)=>{
+    return square*square;
+})
+console.log(newArray);
+//filter method
+let wholeNumbers = [1,2,3,4,5,6];
+let evennumbers = wholeNumbers.filter((even)=>{
+    return even % 2 === 0;
+})
+console.log(evennumbers);
+//reduce method
+let numberstoadd = [1,2,3,4,5,6];                           //adding array numbers with reduce method
+let sumoutput = numberstoadd.reduce((prev , current)=>{
+    return prev + current;
+})
+console.log(sumoutput);
+//reduce method
+let maxnumbers = [10,52,30,24,65,16];                           //getting max numbers with reduce method
+let maxoutput = maxnumbers.reduce((prev , current)=>{
+    return prev > current ? prev : current;
+})
+console.log(maxoutput);
