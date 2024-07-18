@@ -123,3 +123,26 @@ let maxoutput = maxnumbers.reduce((prev , current)=>{
     return prev > current ? prev : current;
 })
 console.log(maxoutput);
+
+//practice question no.1
+let stuMarks = [34,90,56,67,78,89,98,45,99,20];             //return marks above then 90
+let maxMarks = stuMarks.filter((aboveninty) =>{
+    return aboveninty >= 90;
+})
+console.log(maxMarks);
+//practice question no.2
+let n = prompt("Enter a number:");
+let emptyarray = [];
+for(let i=1; i<=n; i++){
+    emptyarray.push(i);
+}
+console.log(emptyarray);
+
+let sumofnumbers = emptyarray.reduce((prev,curr)=>{         //sum of all numbers of emptyarray array
+    return prev + curr;
+})
+console.log(sumofnumbers);
+let factorial = emptyarray.reduce((preve,curre)=>{          //product of all number of emptyarray array
+    return preve * curre;
+})
+console.log(factorial);
