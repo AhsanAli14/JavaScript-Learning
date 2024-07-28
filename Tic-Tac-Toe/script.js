@@ -31,10 +31,13 @@ boxes.forEach((box) => {
             box.innerText = "O";
             turnO = false;
             box.style.color = "black";
+            box.classList.remove("active");
         }else
         {
             box.innerText = "X";
             turnO = true;
+            box.style.color = "#ff1654"
+            box.classList.remove("active");
         }
         box.disabled = true;
         count++;
@@ -62,6 +65,7 @@ const enableBoxes = () => {
     for(let box of boxes){
         box.disabled = false;
         box.innerText = "";
+        box.classList.add("active")
     }
 };
 
